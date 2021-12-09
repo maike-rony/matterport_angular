@@ -1,0 +1,6 @@
+<ng-container *ngIf="modelUrl | async as url">
+    <app-matterport-frame [url]="url" (init)="onFrameInit($event)"></app-matterport-frame>
+</ng-container>
+
+<div>selected Tag Id: {{selectedTagId?.value}}</div>
+<div>hovered Tag Id: {{hoveredTagId?.value}}</div>
